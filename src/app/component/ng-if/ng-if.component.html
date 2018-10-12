@@ -1,0 +1,59 @@
+<section class="padding-80px-tb bg-light-blue">
+  <div class="container">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="title mb-40 text-center">
+        <h2 class="font-weight-400 mb-10">Learn ngIF</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+          form, by injected humour,</p>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Excercise 1</h3>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-4 middle-content">
+        <button class="btn btn-sm btn-primary" (click)="bulb()">Press to On !</button>
+      </div>
+
+      <div class="col-md-3 offset-md-5">
+        <img *ngIf="!switch" src="assets/img/pic_bulboff.gif" alt="">
+        <img *ngIf="switch" src="assets/img/pic_bulbon.gif" alt="">
+      </div>
+
+
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Excercise 2</h3>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-4 middle-content">
+        <button (click)="bulbOff = !bulbOff" class="btn btn-sm btn-primary">Press to On !{{ bulbOff }}</button>
+      </div>
+
+      <div class="col-md-3 offset-md-5">
+        <img [src]="bulbOff?'assets/img/pic_bulbon.gif' : 'assets/img/pic_bulboff.gif'" alt="">
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>

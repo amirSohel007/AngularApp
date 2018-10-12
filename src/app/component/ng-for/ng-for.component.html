@@ -1,0 +1,83 @@
+<section class="padding-80px-tb bg-light-blue">
+  <div class="container">
+    <div class="col-md-8 offset-md-2 text-center">
+    <div class="title mb-40 text-center">
+      <h2 class="font-weight-400 mb-10">Learn For Loop</h2>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+        by injected humour,</p>
+    </div>
+  </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="mb-20">Excercise 1</h3>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table bg-white">
+          <thead class="thead-dark">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Height</th>
+              <th>Color</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let data of dummyData">
+              <td> {{data.Name}} </td>
+              <td> {{data.Age}} </td>
+              <td> {{data.Height}} </td>
+              <td> {{data.Color}}</td>
+              <td> {{data.Weight}} </td>
+            </tr>
+            
+
+            
+           
+          </tbody>
+        </table>
+      </div>
+
+
+
+    </div>
+
+  <hr>
+
+  <div class="row">
+      <div class="col-sm-12">
+        <h3 class="mb-20">Excercise 2</h3>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+<div class="row">
+  <div class="col-md-12">
+    <h4>All Type Colors</h4>
+      <ul *ngFor="let color of colors">
+          <li>{{color}}</li>
+      </ul>
+  </div>
+
+
+  <div class="col-md-12 mt-30">
+      <h4>All Languages</h4>
+        <ul *ngFor="let lang of Languages">
+            <li>{{lang}}</li>
+        </ul>
+    </div>
+
+
+</div>
+
+    </div>
+</section>

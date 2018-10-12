@@ -9,13 +9,22 @@ import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
+import { NgIfComponent } from './component/ng-if/ng-if.component';
+import {AppRoutesModule} from './app-routes';
+import { NgForComponent } from './component/ng-for/ng-for.component';
+import { LearnApiComponent } from './component/learn-api/learn-api.component';
+import { LearnFbComponent } from './component/learn-fb/learn-fb.component'
 
-@NgModule({
-  declarations: [
+@NgModule({ 
+    declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    NgIfComponent,
+    NgForComponent,
+    LearnApiComponent,
+    LearnFbComponent,
  
   ],
   imports: [
@@ -23,7 +32,8 @@ import {VgBufferingModule} from 'videogular2/buffering';
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    AppRoutesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
